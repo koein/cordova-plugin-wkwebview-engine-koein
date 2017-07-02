@@ -71,6 +71,8 @@
         configuration.userContentController = userContentController;
 
         WKWebView* wkWebView = [[WKWebView alloc] initWithFrame:frame configuration:configuration];
+		wkWebView.allowsLinkPreview = NO;
+		wkWebView.allowsBackForwardNavigationGestures = NO;
         wkWebView.UIDelegate = self.uiDelegate;
 
         self.engineWebView = wkWebView;
