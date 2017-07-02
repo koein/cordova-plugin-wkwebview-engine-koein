@@ -201,7 +201,6 @@
     return reload;
 }
 
-
 - (id)loadRequest:(NSURLRequest*)request
 {
     if ([self canLoadRequest:request]) { // can load, differentiate between file urls and other schemes
