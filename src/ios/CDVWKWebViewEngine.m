@@ -201,6 +201,7 @@
     return reload;
 }
 
+
 - (id)loadRequest:(NSURLRequest*)request
 {
     if ([self canLoadRequest:request]) { // can load, differentiate between file urls and other schemes
@@ -755,4 +756,9 @@
 
     return decisionHandler(NO);
 }
+
+var webView: WKWebView!
+let myURL = URL(string: "https://www.apple.com")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
 @end
