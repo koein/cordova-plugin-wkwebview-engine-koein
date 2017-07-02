@@ -72,7 +72,7 @@
 
         WKWebView* wkWebView = [[WKWebView alloc] initWithFrame:frame configuration:configuration];
 		wkWebView.allowsLinkPreview = NO;
-		wkWebView.allowsBackForwardNavigationGestures = NO;
+		wkWebView.allowsBackForwardNavigationGestures = YES;
         wkWebView.UIDelegate = self.uiDelegate;
 
         self.engineWebView = wkWebView;
